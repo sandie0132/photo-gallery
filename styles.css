@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: beige;
+}
+
+li{
+    list-style:none;
+
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+#row2 {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 100%;
+}
+
+
+.imgContainer {
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flipMainDiv:hover .imgContainer {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flip-box-back {
+  background: black;
+  border-radius: 10px;
+  top: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.back-content-detail {
+  color: #ffffff;
+}
+
+img {
+  margin: 2px 2px;
+  border: 1px solid lightgrey;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+.delete-icon {
+  margin: unset !important;
+  border: unset !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+#shuffling {
+  display: inline;
+  padding: 10px;
+  background: #93aacf;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
